@@ -1,0 +1,8 @@
+prefix=/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/devel
+
+Name: vicon_to_velocity
+Description: Description of vicon_to_velocity
+Version: 0.0.0
+Cflags: -I/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/devel/include
+Libs: -L/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/devel/lib 
+Requires: roscpp rospy sensor_msgs geometry_msgs std_msgs

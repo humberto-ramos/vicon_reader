@@ -1,0 +1,9 @@
+<launch>
+	<node name="mocap_to_velocity" pkg="mocap_to_velocity" type="mocap_position_to_velocity" output="screen">
+		<remap from="mocap_ned"		to="pose_stamped"/>
+		<!-- loads the basic parameters -->
+		<rosparam command="load" file="$(find mocap_to_velocity)/params/basic_param.yaml" />
+		<rosparam command="load" file="$(find mocap_to_velocity)/params/camera_to_body.yaml" />
+    </node>
+
+</launch>
