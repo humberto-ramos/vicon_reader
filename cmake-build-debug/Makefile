@@ -48,10 +48,10 @@ RM = /home/turtlebot/clion-2019.1.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity
+CMAKE_SOURCE_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug
+CMAKE_BINARY_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,16 +68,6 @@ install/strip/fast: preinstall/fast
 	/home/turtlebot/clion-2019.1.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -89,6 +79,16 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -99,6 +99,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/turtlebot/clion-2019.1.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/turtlebot/clion-2019.1.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -123,23 +135,11 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/turtlebot/clion-2019.1.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/turtlebot/clion-2019.1.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/CMakeFiles /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/CMakeFiles /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -168,71 +168,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named vicon_to_velocity_generate_messages_py
-
-# Build rule for target.
-vicon_to_velocity_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity_generate_messages_py
-.PHONY : vicon_to_velocity_generate_messages_py
-
-# fast build rule for target.
-vicon_to_velocity_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity_generate_messages_py.dir/build.make CMakeFiles/vicon_to_velocity_generate_messages_py.dir/build
-.PHONY : vicon_to_velocity_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named vicon_to_velocity_gennodejs
-
-# Build rule for target.
-vicon_to_velocity_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity_gennodejs
-.PHONY : vicon_to_velocity_gennodejs
-
-# fast build rule for target.
-vicon_to_velocity_gennodejs/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity_gennodejs.dir/build.make CMakeFiles/vicon_to_velocity_gennodejs.dir/build
-.PHONY : vicon_to_velocity_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named vicon_to_velocity_generate_messages_nodejs
-
-# Build rule for target.
-vicon_to_velocity_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity_generate_messages_nodejs
-.PHONY : vicon_to_velocity_generate_messages_nodejs
-
-# fast build rule for target.
-vicon_to_velocity_generate_messages_nodejs/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity_generate_messages_nodejs.dir/build.make CMakeFiles/vicon_to_velocity_generate_messages_nodejs.dir/build
-.PHONY : vicon_to_velocity_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named vicon_to_velocity_generate_messages_lisp
-
-# Build rule for target.
-vicon_to_velocity_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity_generate_messages_lisp
-.PHONY : vicon_to_velocity_generate_messages_lisp
-
-# fast build rule for target.
-vicon_to_velocity_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity_generate_messages_lisp.dir/build.make CMakeFiles/vicon_to_velocity_generate_messages_lisp.dir/build
-.PHONY : vicon_to_velocity_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named vicon_to_velocity_geneus
-
-# Build rule for target.
-vicon_to_velocity_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity_geneus
-.PHONY : vicon_to_velocity_geneus
-
-# fast build rule for target.
-vicon_to_velocity_geneus/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity_geneus.dir/build.make CMakeFiles/vicon_to_velocity_geneus.dir/build
-.PHONY : vicon_to_velocity_geneus/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
 
 # Build rule for target.
@@ -244,19 +179,6 @@ std_msgs_generate_messages_py: cmake_check_build_system
 std_msgs_generate_messages_py/fast:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named vicon_to_velocity
-
-# Build rule for target.
-vicon_to_velocity: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity
-.PHONY : vicon_to_velocity
-
-# fast build rule for target.
-vicon_to_velocity/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity.dir/build.make CMakeFiles/vicon_to_velocity.dir/build
-.PHONY : vicon_to_velocity/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -337,19 +259,6 @@ tests/fast:
 .PHONY : tests/fast
 
 #=============================================================================
-# Target rules for targets named vicon_to_velocity_generate_messages_cpp
-
-# Build rule for target.
-vicon_to_velocity_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity_generate_messages_cpp
-.PHONY : vicon_to_velocity_generate_messages_cpp
-
-# fast build rule for target.
-vicon_to_velocity_generate_messages_cpp/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity_generate_messages_cpp.dir/build.make CMakeFiles/vicon_to_velocity_generate_messages_cpp.dir/build
-.PHONY : vicon_to_velocity_generate_messages_cpp/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -376,19 +285,6 @@ rosgraph_msgs_generate_messages_nodejs/fast:
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named vicon_to_velocity_genlisp
-
-# Build rule for target.
-vicon_to_velocity_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity_genlisp
-.PHONY : vicon_to_velocity_genlisp
-
-# fast build rule for target.
-vicon_to_velocity_genlisp/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity_genlisp.dir/build.make CMakeFiles/vicon_to_velocity_genlisp.dir/build
-.PHONY : vicon_to_velocity_genlisp/fast
-
-#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_py
 
 # Build rule for target.
@@ -400,19 +296,6 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 rosgraph_msgs_generate_messages_py/fast:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named vicon_to_velocity_generate_messages_eus
-
-# Build rule for target.
-vicon_to_velocity_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity_generate_messages_eus
-.PHONY : vicon_to_velocity_generate_messages_eus
-
-# fast build rule for target.
-vicon_to_velocity_generate_messages_eus/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity_generate_messages_eus.dir/build.make CMakeFiles/vicon_to_velocity_generate_messages_eus.dir/build
-.PHONY : vicon_to_velocity_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
@@ -478,19 +361,6 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 roscpp_generate_messages_lisp/fast:
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named vicon_to_velocity_gencpp
-
-# Build rule for target.
-vicon_to_velocity_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity_gencpp
-.PHONY : vicon_to_velocity_gencpp
-
-# fast build rule for target.
-vicon_to_velocity_gencpp/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity_gencpp.dir/build.make CMakeFiles/vicon_to_velocity_gencpp.dir/build
-.PHONY : vicon_to_velocity_gencpp/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_nodejs
@@ -688,56 +558,17 @@ sensor_msgs_generate_messages_nodejs/fast:
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named vicon_to_velocity_generate_messages
+# Target rules for targets named vicon_reader
 
 # Build rule for target.
-vicon_to_velocity_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity_generate_messages
-.PHONY : vicon_to_velocity_generate_messages
+vicon_reader: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vicon_reader
+.PHONY : vicon_reader
 
 # fast build rule for target.
-vicon_to_velocity_generate_messages/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity_generate_messages.dir/build.make CMakeFiles/vicon_to_velocity_generate_messages.dir/build
-.PHONY : vicon_to_velocity_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named vicon_to_velocity_genpy
-
-# Build rule for target.
-vicon_to_velocity_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_to_velocity_genpy
-.PHONY : vicon_to_velocity_genpy
-
-# fast build rule for target.
-vicon_to_velocity_genpy/fast:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity_genpy.dir/build.make CMakeFiles/vicon_to_velocity_genpy.dir/build
-.PHONY : vicon_to_velocity_genpy/fast
-
-#=============================================================================
-# Target rules for targets named _vicon_to_velocity_generate_messages_check_deps_EulerAngles
-
-# Build rule for target.
-_vicon_to_velocity_generate_messages_check_deps_EulerAngles: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _vicon_to_velocity_generate_messages_check_deps_EulerAngles
-.PHONY : _vicon_to_velocity_generate_messages_check_deps_EulerAngles
-
-# fast build rule for target.
-_vicon_to_velocity_generate_messages_check_deps_EulerAngles/fast:
-	$(MAKE) -f CMakeFiles/_vicon_to_velocity_generate_messages_check_deps_EulerAngles.dir/build.make CMakeFiles/_vicon_to_velocity_generate_messages_check_deps_EulerAngles.dir/build
-.PHONY : _vicon_to_velocity_generate_messages_check_deps_EulerAngles/fast
-
-#=============================================================================
-# Target rules for targets named _vicon_to_velocity_generate_messages_check_deps_Estimate
-
-# Build rule for target.
-_vicon_to_velocity_generate_messages_check_deps_Estimate: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _vicon_to_velocity_generate_messages_check_deps_Estimate
-.PHONY : _vicon_to_velocity_generate_messages_check_deps_Estimate
-
-# fast build rule for target.
-_vicon_to_velocity_generate_messages_check_deps_Estimate/fast:
-	$(MAKE) -f CMakeFiles/_vicon_to_velocity_generate_messages_check_deps_Estimate.dir/build.make CMakeFiles/_vicon_to_velocity_generate_messages_check_deps_Estimate.dir/build
-.PHONY : _vicon_to_velocity_generate_messages_check_deps_Estimate/fast
+vicon_reader/fast:
+	$(MAKE) -f CMakeFiles/vicon_reader.dir/build.make CMakeFiles/vicon_reader.dir/build
+.PHONY : vicon_reader/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -791,59 +622,59 @@ gtest/fast:
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-src/mocap_velocity_generator_node.o: src/mocap_velocity_generator_node.cpp.o
+src/mocap_reader_node.o: src/mocap_reader_node.cpp.o
 
-.PHONY : src/mocap_velocity_generator_node.o
-
-# target to build an object file
-src/mocap_velocity_generator_node.cpp.o:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity.dir/build.make CMakeFiles/vicon_to_velocity.dir/src/mocap_velocity_generator_node.cpp.o
-.PHONY : src/mocap_velocity_generator_node.cpp.o
-
-src/mocap_velocity_generator_node.i: src/mocap_velocity_generator_node.cpp.i
-
-.PHONY : src/mocap_velocity_generator_node.i
-
-# target to preprocess a source file
-src/mocap_velocity_generator_node.cpp.i:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity.dir/build.make CMakeFiles/vicon_to_velocity.dir/src/mocap_velocity_generator_node.cpp.i
-.PHONY : src/mocap_velocity_generator_node.cpp.i
-
-src/mocap_velocity_generator_node.s: src/mocap_velocity_generator_node.cpp.s
-
-.PHONY : src/mocap_velocity_generator_node.s
-
-# target to generate assembly for a file
-src/mocap_velocity_generator_node.cpp.s:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity.dir/build.make CMakeFiles/vicon_to_velocity.dir/src/mocap_velocity_generator_node.cpp.s
-.PHONY : src/mocap_velocity_generator_node.cpp.s
-
-src/vicon_to_velocity.o: src/vicon_to_velocity.cpp.o
-
-.PHONY : src/vicon_to_velocity.o
+.PHONY : src/mocap_reader_node.o
 
 # target to build an object file
-src/vicon_to_velocity.cpp.o:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity.dir/build.make CMakeFiles/vicon_to_velocity.dir/src/vicon_to_velocity.cpp.o
-.PHONY : src/vicon_to_velocity.cpp.o
+src/mocap_reader_node.cpp.o:
+	$(MAKE) -f CMakeFiles/vicon_reader.dir/build.make CMakeFiles/vicon_reader.dir/src/mocap_reader_node.cpp.o
+.PHONY : src/mocap_reader_node.cpp.o
 
-src/vicon_to_velocity.i: src/vicon_to_velocity.cpp.i
+src/mocap_reader_node.i: src/mocap_reader_node.cpp.i
 
-.PHONY : src/vicon_to_velocity.i
+.PHONY : src/mocap_reader_node.i
 
 # target to preprocess a source file
-src/vicon_to_velocity.cpp.i:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity.dir/build.make CMakeFiles/vicon_to_velocity.dir/src/vicon_to_velocity.cpp.i
-.PHONY : src/vicon_to_velocity.cpp.i
+src/mocap_reader_node.cpp.i:
+	$(MAKE) -f CMakeFiles/vicon_reader.dir/build.make CMakeFiles/vicon_reader.dir/src/mocap_reader_node.cpp.i
+.PHONY : src/mocap_reader_node.cpp.i
 
-src/vicon_to_velocity.s: src/vicon_to_velocity.cpp.s
+src/mocap_reader_node.s: src/mocap_reader_node.cpp.s
 
-.PHONY : src/vicon_to_velocity.s
+.PHONY : src/mocap_reader_node.s
 
 # target to generate assembly for a file
-src/vicon_to_velocity.cpp.s:
-	$(MAKE) -f CMakeFiles/vicon_to_velocity.dir/build.make CMakeFiles/vicon_to_velocity.dir/src/vicon_to_velocity.cpp.s
-.PHONY : src/vicon_to_velocity.cpp.s
+src/mocap_reader_node.cpp.s:
+	$(MAKE) -f CMakeFiles/vicon_reader.dir/build.make CMakeFiles/vicon_reader.dir/src/mocap_reader_node.cpp.s
+.PHONY : src/mocap_reader_node.cpp.s
+
+src/vicon_reader.o: src/vicon_reader.cpp.o
+
+.PHONY : src/vicon_reader.o
+
+# target to build an object file
+src/vicon_reader.cpp.o:
+	$(MAKE) -f CMakeFiles/vicon_reader.dir/build.make CMakeFiles/vicon_reader.dir/src/vicon_reader.cpp.o
+.PHONY : src/vicon_reader.cpp.o
+
+src/vicon_reader.i: src/vicon_reader.cpp.i
+
+.PHONY : src/vicon_reader.i
+
+# target to preprocess a source file
+src/vicon_reader.cpp.i:
+	$(MAKE) -f CMakeFiles/vicon_reader.dir/build.make CMakeFiles/vicon_reader.dir/src/vicon_reader.cpp.i
+.PHONY : src/vicon_reader.cpp.i
+
+src/vicon_reader.s: src/vicon_reader.cpp.s
+
+.PHONY : src/vicon_reader.s
+
+# target to generate assembly for a file
+src/vicon_reader.cpp.s:
+	$(MAKE) -f CMakeFiles/vicon_reader.dir/build.make CMakeFiles/vicon_reader.dir/src/vicon_reader.cpp.s
+.PHONY : src/vicon_reader.cpp.s
 
 # Help Target
 help:
@@ -852,34 +683,24 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... list_install_components"
-	@echo "... vicon_to_velocity_generate_messages_py"
-	@echo "... vicon_to_velocity_gennodejs"
-	@echo "... vicon_to_velocity_generate_messages_nodejs"
-	@echo "... vicon_to_velocity_generate_messages_lisp"
-	@echo "... vicon_to_velocity_geneus"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... vicon_to_velocity"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... tests"
 	@echo "... test"
-	@echo "... vicon_to_velocity_generate_messages_cpp"
+	@echo "... tests"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... vicon_to_velocity_genlisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... edit_cache"
-	@echo "... vicon_to_velocity_generate_messages_eus"
 	@echo "... roscpp_generate_messages_py"
+	@echo "... list_install_components"
 	@echo "... download_extra_data"
 	@echo "... run_tests"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
-	@echo "... vicon_to_velocity_gencpp"
+	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... clean_test_results"
 	@echo "... sensor_msgs_generate_messages_py"
@@ -890,28 +711,25 @@ help:
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... install/local"
 	@echo "... doxygen"
 	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
+	@echo "... rebuild_cache"
 	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... install"
-	@echo "... vicon_to_velocity_generate_messages"
-	@echo "... vicon_to_velocity_genpy"
-	@echo "... _vicon_to_velocity_generate_messages_check_deps_EulerAngles"
-	@echo "... _vicon_to_velocity_generate_messages_check_deps_Estimate"
+	@echo "... vicon_reader"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... src/mocap_velocity_generator_node.o"
-	@echo "... src/mocap_velocity_generator_node.i"
-	@echo "... src/mocap_velocity_generator_node.s"
-	@echo "... src/vicon_to_velocity.o"
-	@echo "... src/vicon_to_velocity.i"
-	@echo "... src/vicon_to_velocity.s"
+	@echo "... src/mocap_reader_node.o"
+	@echo "... src/mocap_reader_node.i"
+	@echo "... src/mocap_reader_node.s"
+	@echo "... src/vicon_reader.o"
+	@echo "... src/vicon_reader.i"
+	@echo "... src/vicon_reader.s"
 .PHONY : help
 
 

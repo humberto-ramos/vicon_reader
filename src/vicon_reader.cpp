@@ -14,7 +14,6 @@ namespace vicon_reader {
 
     ViconReader::~ViconReader(){}
 
-
     void ViconReader::xtionCallback(const geometry_msgs::TransformStampedConstPtr &msg) {
         geometry_msgs::TransformStamped msg_xtion;
         msg_xtion = *msg;

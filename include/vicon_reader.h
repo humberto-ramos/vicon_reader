@@ -39,8 +39,6 @@ namespace vicon_reader {
 
 
 
-        std::normal_distribution<double> distribution;
-
 
         Eigen::Vector4d q_vicon_to_camera0;
         Eigen::Vector4d q_vicon_to_camera;

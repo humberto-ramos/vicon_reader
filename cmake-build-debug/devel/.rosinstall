@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/devel/setup.sh
+    local-name: /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/devel/setup.sh

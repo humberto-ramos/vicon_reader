@@ -1,4 +1,4 @@
-# Install script for directory: /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity
+# Install script for directory: /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -56,7 +56,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -68,7 +68,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -80,7 +80,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/catkin_generated/installspace/setup.bash")
+file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/catkin_generated/installspace/setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -92,7 +92,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/catkin_generated/installspace/setup.sh")
+file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/catkin_generated/installspace/setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -104,7 +104,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/catkin_generated/installspace/setup.zsh")
+file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/catkin_generated/installspace/setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -116,86 +116,47 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vicon_to_velocity/msg" TYPE FILE FILES
-    "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/msg/EulerAngles.msg"
-    "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/msg/Estimate.msg"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/catkin_generated/installspace/vicon_reader.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vicon_reader/cmake" TYPE FILE FILES
+    "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/catkin_generated/installspace/vicon_readerConfig.cmake"
+    "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/catkin_generated/installspace/vicon_readerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vicon_to_velocity/cmake" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/catkin_generated/installspace/vicon_to_velocity-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vicon_reader" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/devel/include/vicon_to_velocity")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/devel/share/roseus/ros/vicon_to_velocity")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/devel/share/common-lisp/ros/vicon_to_velocity")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/devel/share/gennodejs/ros/vicon_to_velocity")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/devel/lib/python2.7/dist-packages/vicon_to_velocity")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/devel/lib/python2.7/dist-packages/vicon_to_velocity")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/catkin_generated/installspace/vicon_to_velocity.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vicon_to_velocity/cmake" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/catkin_generated/installspace/vicon_to_velocity-msg-extras.cmake")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vicon_to_velocity/cmake" TYPE FILE FILES
-    "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/catkin_generated/installspace/vicon_to_velocityConfig.cmake"
-    "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/catkin_generated/installspace/vicon_to_velocityConfig-version.cmake"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vicon_to_velocity" TYPE FILE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/package.xml")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_to_velocity/vicon_to_velocity" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_to_velocity/vicon_to_velocity")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_reader/vicon_reader" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_reader/vicon_reader")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_to_velocity/vicon_to_velocity"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_reader/vicon_reader"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/vicon_to_velocity" TYPE EXECUTABLE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/devel/lib/vicon_to_velocity/vicon_to_velocity")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_to_velocity/vicon_to_velocity" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_to_velocity/vicon_to_velocity")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/vicon_reader" TYPE EXECUTABLE FILES "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/devel/lib/vicon_reader/vicon_reader")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_reader/vicon_reader" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_reader/vicon_reader")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_to_velocity/vicon_to_velocity"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_reader/vicon_reader"
          OLD_RPATH "/opt/ros/kinetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_to_velocity/vicon_to_velocity")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/vicon_reader/vicon_reader")
     endif()
   endif()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/gtest/cmake_install.cmake")
+  include("/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/gtest/cmake_install.cmake")
 
 endif()
 
@@ -207,5 +168,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

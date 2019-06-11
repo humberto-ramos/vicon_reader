@@ -43,10 +43,10 @@ RM = /home/turtlebot/clion-2019.1.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity
+CMAKE_SOURCE_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug
+CMAKE_BINARY_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/test_results
+	/usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

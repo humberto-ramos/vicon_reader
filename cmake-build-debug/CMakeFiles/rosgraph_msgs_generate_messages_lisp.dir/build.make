@@ -43,10 +43,10 @@ RM = /home/turtlebot/clion-2019.1.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity
+CMAKE_SOURCE_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug
+CMAKE_BINARY_DIR = /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug
 
 # Utility rule file for rosgraph_msgs_generate_messages_lisp.
 
@@ -67,6 +67,6 @@ CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend:
-	cd /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_to_velocity/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug /home/turtlebot/catkin_ws/src/REEF_estimator_bundle/vicon_reader/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 
